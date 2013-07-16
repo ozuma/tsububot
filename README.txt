@@ -1,6 +1,6 @@
 ===============================================================================
- 粒粒bot Ver. 0.3.1
-                                                           2012/12/31 ozuma
+ 粒粒bot Ver. 0.4.0
+                                                           2013/07/16 ozuma
 
     Bot URL:  http://twitter.com/ozumaBot
     配布 URL: http://homepage1.nifty.com/y-osumi/works/code/twitter_bot.htm
@@ -15,7 +15,7 @@
 
 ■動作環境
   * UNIX系OS(FreeBSD/Linux) ＋ Perl 5.8以上
-  * Perlのライブラリとして YAML / Net::Twitter が必要です
+  * Perlのモジュールとして YAML / Net::Twitter が必要です
 
 
 ■主な機能
@@ -27,12 +27,13 @@
 * 必要なもの
  - ボット用のTwitterアカウント
  - cronが動かせるサーバ
-   ※私はさくらのレンタルサーバで動かしています。この場合、Net::Twitter がインストールされていないので自前で入れる必要があります
-   http://www.sakura.ne.jp/rentalserver/standard/index.html
+   ※私はさくらのレンタルサーバで動かしています。この場合、Net::Twitter がインストールされていないので自前で入れる必要があります。CPANでホームディレクトリのlocal配下に入れると良いでしょう。
+   それが面倒くさいひと向けに、私の $HOME/local 配下をまとめて同梱してあります(sakura-local.tar.bz2)。
 
 * 設定方法
  Twitter のOAuthはなかなかややこしいため、設定が非常に煩雑となっております。
   - 配布ファイルを展開します。
+  - (さくらのレンタルサーバの場合)同梱のsakura-local.tar.bz2をホームディレクトリ直下に[local]というディレクトリ名で展開します。Net::Twitterを自前でインストールしている場合は、この項目は必要ありません。
   - 以下のブログ記事にまとめた通り、Access TokenとAccess Token Secretを取得します。
   http://d.hatena.ne.jp/ozuma/20121230/1356801529
     = 上記エントリ内の「Access TokenとSecretの取得」を参照。
