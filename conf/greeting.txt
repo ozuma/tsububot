@@ -1,0 +1,38 @@
+# greeting time setting(hour)
+#  #の付いている時間は何も発言をしません。
+# ---
+0: mes:random
+1: さすがに眠いから寝るわよー。おやすみ！
+#2: 
+3: zzzZZZ...
+#4: 
+#5: 
+#6: 
+7: おっはよー！ さて、今日も頑張りますか。
+8: mes:random
+#9: 
+10: mes:random
+11: mes:random
+12: 
+  - お腹ぺっこぺこ！ さーて、お昼にしようかしら。
+  - mes:random
+#13: 
+14: 
+  - そろそろおやつね。何食べようかしら？
+  - mes:random
+#15: 
+16: mes:random
+17: 
+  - 早く仕事終わらせて帰りましょ。残りは明日、明日。
+  - mes:random
+18: mes:random
+#19: 
+#20: 
+21: mes:random
+22: 
+  - mes:random
+  - mes:random
+  - ううっ、眠いのぅ……。
+23: mes:random
+# ---
+# end
