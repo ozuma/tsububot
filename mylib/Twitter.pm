@@ -10,7 +10,7 @@ use YAML;
 use Net::Twitter;
 use Data::Dumper;
 
-my $VERSION = "0.31";
+my $VERSION = "0.40";
 
 sub new {
   my $pkg = shift;
@@ -30,7 +30,7 @@ sub new {
   my $TOKEN = YAML::LoadFile($TOKENFILE);
 
   my $TWITCON = Net::Twitter->new(
-    traits   => [qw/OAuth API::REST/],
+    traits   => [qw/OAuth API::RESTv1_1/],
     consumer_key        => "inbhMhZfctsHzgsdZfAzQ",
     consumer_secret     => "ceDrhPACPROu1bPlMKdAShXFHGhfkmspG8tPU96xI",
     access_token        => $TOKEN->{token},
